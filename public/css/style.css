@@ -1,0 +1,152 @@
+.carousel-caption h3 {
+    color: gainsboro;
+}
+
+.carousel-caption p {
+    color: gainsboro;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+#carouselSite .carousel-inner, #carouselSite .carousel-item{
+    height: 100%;
+}
+
+#carouselSite .carousel-caption{
+    top: 30%;
+
+}
+
+#carouselSite .carousel-caption h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #FFF;
+
+}
+
+#carouselSite .carousel-caption p{
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 100px;
+    color: #FFF;
+}
+
+.carousel .item img {
+    width: 100%;
+  }
+
+.main-btn{
+    background-color: #65DAF9;
+    color: #FFF;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: .5s;
+  }
+
+.main-btn:hover{
+    text-decoration: none;
+    color: #FFF;
+    background-color: transparent;
+    border-color: #65DAF9;
+
+}
+
+.carousel-indicators .active{
+    background-color: #65DAF9;
+}
+
+#about-area{
+    background-color: #F9F9F9;
+}
+.main-title{
+    color: #444;
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+.main-title::after{
+    content: "";
+    width: 15%;
+    position: absolute;
+    top: 60px;
+    left: 42.5%;
+}
+.about-title{
+    font-size: 17px;
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#about-list{
+    list-style: none;
+    padding-left: 0;
+}
+#about-list li{
+    line-height: 30px;
+}
+#about-list i{
+    margin-right: 15px;
+    color: #65DAF9;
+}
+.service-box{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.service-box i, .service-box h4{
+    transition: .5s;
+}
+.service-box i {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #444;
+}
+.service-box h4{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.service-box:hover > i, .service-box:hover > h4{
+    color: #65DAF9;
+}
+
+.contact .card:hover i,.contact .card:hover h4{
+	color: #87d37c;
+}
+.project-box {
+    margin-bottom: 30px;
+  }
+  
+  #filter-btn-box {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  #portfolio-area .filter-btn {
+    color: #444;
+    border: 1px solid #444;
+    background-color: transparent;
+    text-transform: none;
+    margin: 0 15px;
+    min-width: 100px;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+  }
+  
+  #portfolio-area .filter-btn.active, #portfolio-area .filter-btn:hover {
+    color: #FFF;
+    border: 1px solid #000000;
+    background-color: #65DAF9;
+    transition: 0.5s;
+  }
+  .img-200-200 {
+    width: 400px; 
+ }
+/*# sourceMappingURL=style.css.map */

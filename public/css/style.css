@@ -115,7 +115,7 @@
     color: #65DAF9;
 }
 
-.contact .card:hover i,.contact .card:hover h4{
+#contact .card:hover i,#contact .card:hover h4{
 	color: #87d37c;
 }
 .project-box {
@@ -157,4 +157,93 @@
     height: 15vw;
     object-fit: cover;
 }
+body{
+    margin-top: -32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVIDADE */
+
+@media(max-width: 425px){
+
+
+    /*Nav*/
+    @media handheld, only screen and (min-width: 768px), only screen and (min-device-width: 768px), only screen and (max-width: 1024px), only screen and (max-device-width: 425px) and (orientation: portrait) {
+        .nav li {
+            text-align: center;
+        }
+    }
+
+
+
+
+
+    /*Carousel*/
+    #carouselSite{
+        margin-top: 90px;
+    }
+
+    #carouselSite .carousel-caption{
+        top: 5%;
+    }
+    #carouselSite .carousel-caption h1{
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    #carouselSite .carousel-caption p{
+        display: none;
+    }
+    .carousel-caption .main-btn{
+        font-size: 14px;
+    }
+
+
+    /*Sobre*/
+
+    .main-title{
+        font-size: 30px;
+    }
+    #about-area img{
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    /*Portfólio*/
+    #portfolio-area .filter-btn{
+        margin-bottom: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .project-box{
+        width: 50%;
+    }
+
+    /*Contato*/
+
+    #contact .paragrafo{
+        font-size: 20px;
+    }
+
+}
+
 /*# sourceMappingURL=style.css.map */

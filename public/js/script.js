@@ -1,4 +1,3 @@
-console.log('teste')
 $('.filter-btn').on('click', function() {
 
     let type = $(this).attr('id');
@@ -33,6 +32,7 @@ $('.filter-btn').on('click', function() {
 
 
 
+//MODALS
 
 
 
@@ -61,6 +61,10 @@ $('.filter-btn').on('click', function() {
 
 
 
+
+
+
+//FILTER
 
 
   // Select all links with hashes

@@ -14,10 +14,10 @@
     "popper.js": "^1.16.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "CI= react-scripts start",
+    "build": "CI= react-scripts build",
+    "test": "CI= react-scripts test",
+    "eject": "CI =react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"

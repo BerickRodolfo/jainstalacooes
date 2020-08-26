@@ -20,6 +20,7 @@
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    
 }
 
 /* Modal Content (Image) */
@@ -28,6 +29,7 @@
     display: block;
     width: 80%;
     max-width: 700px;
+
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -146,6 +148,17 @@
     color: #FFF;
 }
 
+#about-area::before,#services-area::before,#carouselSite::before,#portfolio-area::before,#venda::before,#contact::before{
+display: block;
+content: " ";
+margin-top: -65px;
+height: 65px;
+visibility: hidden;
+}
+
+
+
+
 .carousel-item img{
  width: 100%;
   }
@@ -174,14 +187,15 @@
     background-color: #65DAF9;
 }
 
-#about-area{
-    background-color: #F9F9F9;
+#contact{
+    background-color: white;
 }
 .main-title{
     color: #444;
     margin: 0 0 65px 0;
     font-size: 40px;
     text-align: center;
+    text-decoration: underline;
 }
 
 .main-title::after{
@@ -191,6 +205,9 @@
     top: 60px;
     left: 42.5%;
 }
+    #about-area{
+        border: none !important;
+    }
 .about-title{
     font-size: 17px;
     color: #444;
@@ -215,6 +232,13 @@
 .service-box i, .service-box h4{
     transition: .5s;
 }
+.service-box-a{
+    margin-left:155px;
+}
+.service-box-b{
+    margin-left:70px;
+}
+
 .service-box i {
     font-size: 36px;
     margin-bottom: 20px;
@@ -225,11 +249,12 @@
     margin-bottom: 20px;
 }
 .service-box:hover > i, .service-box:hover > h4{
-    color: #1900ff;
+    color: #8400ff;
 }
 
 #contact .card:hover i,#contact .card:hover h4{
-	color: #87d37c;
+    color: #87d37c;
+    transition: 0,9s;
 }
 .project-box {
     margin-bottom: 30px;
@@ -323,7 +348,7 @@ nav ul li a {
 
 /* RESPONSIVIDADE */
 
-@media(max-width: 425px){
+@media(max-width: 400px){
 
 
     /*Nav*/
@@ -398,5 +423,91 @@ nav ul li a {
     }
 
 }
+
+@media(max-width: 425px){
+
+
+    /*Nav*/
+    nav.stroke ul li a:after{
+        background: none!important;
+    }
+
+
+    body{
+        margin-top: -35px;
+    }
+
+
+    
+
+
+
+    /*Carousel*/
+    #carouselSite{
+        margin-top: 90px;
+    }
+
+    #carouselSite .carousel-caption{
+        top: 5%;
+    }
+    #carouselSite .carousel-caption h1{
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    #carouselSite .carousel-caption p{
+        display: none;
+    }
+    .carousel-caption .main-btn{
+        font-size: 14px;
+    }
+
+    /*Services*/
+
+    .service-box-a{
+        margin-left:0px;
+    }
+    .service-box-b{
+        margin-left:0px;
+    }
+
+    /*Sobre*/
+
+    .main-title{
+        font-size: 30px;
+    }
+    #about-area img{
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    /*Portfólio*/
+    #portfolio-area .filter-btn{
+        margin-bottom: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .project-box{
+        width: 50%;
+    }
+
+    /*Contato*/
+
+    #contact .paragrafo{
+        font-size: 20px;
+    }
+
+    /*Modal*/
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 60%;
+        max-width: 700px;
+    }
+
+}
+
+/*# sourceMappingURL=style.css.map */
+
 
 /*# sourceMappingURL=style.css.map */

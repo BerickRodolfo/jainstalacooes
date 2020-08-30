@@ -506,6 +506,96 @@ nav ul li a {
     }
 
 }
+@media(max-width: 350px){
+
+
+    /*Nav*/
+    nav.stroke ul li a:after{
+        background: none!important;
+    }
+    .navbar a{
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 0px;
+        text-align: center;
+    }
+    .navbar img{
+        width: 30%;
+        height: 10%;
+    }
+    
+
+
+    body{
+        margin-top: -35px;
+    }
+
+
+    /*NavBar*/
+    
+
+
+
+    /*Carousel*/
+    #carouselSite{
+        margin-top: 90px;
+    }
+
+    #carouselSite .carousel-caption{
+        top: 5%;
+    }
+    #carouselSite .carousel-caption h1{
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    #carouselSite .carousel-caption p{
+        display: none;
+    }
+    .carousel-caption .main-btn{
+        font-size: 14px;
+    }
+
+
+    /*Sobre*/
+
+    .main-title{
+        font-size: 30px;
+    }
+    #about-area img{
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    /*Portfólio*/
+    #portfolio-area .filter-btn{
+        margin-bottom: 20px;
+        margin-right: 30px;
+        margin-left: 20px;
+        display: grid;
+    }
+    .project-box{
+        width: 50%;
+    }
+
+    /*Contato*/
+
+    #contact .paragrafo{
+        font-size: 20px;
+    }
+
+    /*Modal*/
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 60%;
+        max-width: 700px;
+    }
+    .col-12 .bemvindo{
+        font-size: 65px;
+    }
+
+}
 
 /*# sourceMappingURL=style.css.map */
 

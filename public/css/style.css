@@ -506,10 +506,172 @@ nav ul li a {
     }
 
 }
-@media(max-width: 350px){
 
 
-    /*Nav*/
+
+/* PCS*/
+@media (min-width: 80.0625em) {
+     /*Nav*/
+     nav.stroke ul li a:after{
+        background: none!important;
+    }
+    .navbar a{
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 0px;
+        text-align: center;
+    }
+    .navbar img{
+        width: 10%;
+        height: 10%;
+    }
+    
+
+
+    body{
+        margin-top: -35px;
+    }
+  
+    
+
+
+    /*NavBar*/
+    
+
+
+
+    /*Carousel*/
+ 
+ 
+
+
+
+
+
+    /*Sobre*/
+
+    .main-title{
+        font-size: 30px;
+    }
+    #about-area img{
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    /*Portfólio*/
+    #portfolio-area .filter-btn{
+        margin-bottom: 20px;
+        margin-right: 30px;
+        margin-left: 20px;
+    }
+    .project-box{
+        width: 50%;
+    }
+
+    /*Contato*/
+
+    #contact .paragrafo{
+        font-size: 20px;
+    }
+
+    /*Modal*/
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 60%;
+        max-width: 700px;
+        
+    }
+    .col-12 .bemvindo{
+        font-size: 65px;
+    }
+}
+  /* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px */
+  @media (min-width:  64.0625em) and (max-width: 80em) {
+   /*Nav*/
+   nav.stroke ul li a:after{
+    background: none!important;
+}
+.navbar a{
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 0px;
+    text-align: center;
+}
+.navbar img{
+    width: 10%;
+    height: 10%;
+}
+
+
+
+body{
+    margin-top: -35px;
+}
+.main-title h3{
+    font-size: 30px;
+}
+
+
+/*NavBar*/
+
+
+
+
+/*Carousel*/
+
+
+
+
+
+
+
+/*Sobre*/
+
+.main-title{
+    font-size: 30px;
+}
+#about-area img{
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+/*Portfólio*/
+#portfolio-area .filter-btn{
+    margin-bottom: 20px;
+    margin-right: 30px;
+    margin-left: 20px;
+}
+.project-box{
+    width: 50%;
+}
+
+/*Contato*/
+
+#contact .paragrafo{
+    font-size: 20px;
+}
+
+/*Modal*/
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 60%;
+    max-width: 700px;
+}
+.col-12 .bemvindo{
+    font-size: 65px;
+}
+  }
+/* Iphone 8*/
+
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2) {
+                   /*Nav*/
     nav.stroke ul li a:after{
         background: none!important;
     }
@@ -597,7 +759,493 @@ nav ul li a {
 
 }
 
+/* Galaxy S5 portrait and landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+
+                        /*Nav*/
+    nav.stroke ul li a:after{
+        background: none!important;
+    }
+    .navbar a{
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 0px;
+        text-align: center;
+    }
+    .navbar img{
+        width: 30%;
+        height: 10%;
+    }
+    
+
+
+    body{
+        margin-top: -35px;
+    }
+
+
+    /*NavBar*/
+    
+
+
+
+    /*Carousel*/
+    #carouselSite{
+        margin-top: 90px;
+    }
+
+    #carouselSite .carousel-caption{
+        top: 5%;
+    }
+    #carouselSite .carousel-caption h1{
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    #carouselSite .carousel-caption p{
+        display: none;
+    }
+    .carousel-caption .main-btn{
+        font-size: 14px;
+    }
+
+
+    /*Sobre*/
+
+    .main-title{
+        font-size: 30px;
+    }
+    #about-area img{
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    /*Portfólio*/
+    #portfolio-area .filter-btn{
+        margin-bottom: 20px;
+        margin-right: 30px;
+        margin-left: 20px;
+        display: grid;
+    }
+    .project-box{
+        width: 50%;
+    }
+
+    /*Contato*/
+
+    #contact .paragrafo{
+        font-size: 20px;
+    }
+
+    /*Modal*/
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 60%;
+        max-width: 700px;
+    }
+    .col-12 .bemvindo{
+        font-size: 65px;
+    }
+
+}
+
+
+/* Galaxy S5 portrait */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+                        /*Nav*/
+    nav.stroke ul li a:after{
+        background: none!important;
+    }
+    .navbar a{
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 0px;
+        text-align: center;
+    }
+    .navbar img{
+        width: 30%;
+        height: 10%;
+    }
+    
+
+
+    body{
+        margin-top: -35px;
+    }
+
+
+    /*NavBar*/
+    
+
+
+
+    /*Carousel*/
+    #carouselSite{
+        margin-top: 90px;
+    }
+
+    #carouselSite .carousel-caption{
+        top: 5%;
+    }
+    #carouselSite .carousel-caption h1{
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    #carouselSite .carousel-caption p{
+        display: none;
+    }
+    .carousel-caption .main-btn{
+        font-size: 14px;
+    }
+
+
+    /*Sobre*/
+
+    .main-title{
+        font-size: 30px;
+    }
+    #about-area img{
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    /*Portfólio*/
+    #portfolio-area .filter-btn{
+        margin-bottom: 20px;
+        margin-right: 30px;
+        margin-left: 20px;
+        display: grid;
+    }
+    .project-box{
+        width: 50%;
+    }
+
+    /*Contato*/
+
+    #contact .paragrafo{
+        font-size: 20px;
+    }
+
+    /*Modal*/
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 60%;
+        max-width: 700px;
+    }
+    .col-12 .bemvindo{
+        font-size: 65px;
+    }
+
+}
+
+
+/* Galaxy S5 landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: landscape) {
+
+                            /*Nav*/
+    nav.stroke ul li a:after{
+        background: none!important;
+    }
+    .navbar a{
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 0px;
+        text-align: center;
+    }
+    .navbar img{
+        width: 30%;
+        height: 10%;
+    }
+    
+
+
+    body{
+        margin-top: -35px;
+    }
+
+
+    /*NavBar*/
+    
+
+
+
+    /*Carousel*/
+    #carouselSite{
+        margin-top: 90px;
+    }
+
+    #carouselSite .carousel-caption{
+        top: 5%;
+    }
+    #carouselSite .carousel-caption h1{
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    #carouselSite .carousel-caption p{
+        display: none;
+    }
+    .carousel-caption .main-btn{
+        font-size: 14px;
+    }
+
+
+    /*Sobre*/
+
+    .main-title{
+        font-size: 30px;
+    }
+    #about-area img{
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    /*Portfólio*/
+    #portfolio-area .filter-btn{
+        margin-bottom: 20px;
+        margin-right: 30px;
+        margin-left: 20px;
+        display: grid;
+    }
+    .project-box{
+        width: 50%;
+    }
+
+    /*Contato*/
+
+    #contact .paragrafo{
+        font-size: 20px;
+    }
+
+    /*Modal*/
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 60%;
+        max-width: 700px;
+    }
+    .col-12 .bemvindo{
+        font-size: 65px;
+    }
+
+}
+
+
+    
+    
+    
+    
+    
+
+/* Iphone 8 Plus*/
+
+    @media only screen 
+    and (device-width : 414px) 
+    and (device-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3) {
+
+        
+            /*Nav*/
+    nav.stroke ul li a:after{
+        background: none!important;
+    }
+    .navbar a{
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 0px;
+        text-align: center;
+    }
+    .navbar img{
+        width: 30%;
+        height: 10%;
+    }
+    
+
+
+    body{
+        margin-top: -35px;
+    }
+
+
+    /*NavBar*/
+    
+
+
+
+    /*Carousel*/
+    #carouselSite{
+        margin-top: 90px;
+    }
+
+    #carouselSite .carousel-caption{
+        top: 5%;
+    }
+    #carouselSite .carousel-caption h1{
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    #carouselSite .carousel-caption p{
+        display: none;
+    }
+    .carousel-caption .main-btn{
+        font-size: 14px;
+    }
+
+
+    /*Sobre*/
+
+    .main-title{
+        font-size: 30px;
+    }
+    #about-area img{
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    /*Portfólio*/
+    #portfolio-area .filter-btn{
+        margin-bottom: 20px;
+        margin-right: 30px;
+        margin-left: 20px;
+        display: grid;
+    }
+    .project-box{
+        width: 50%;
+    }
+
+    /*Contato*/
+
+    #contact .paragrafo{
+        font-size: 20px;
+    }
+
+    /*Modal*/
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 60%;
+        max-width: 700px;
+    }
+    .col-12 .bemvindo{
+        font-size: 65px;
+    }
+
+}
+     
+
+/* Iphone X*/
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3){
+
+            /*Nav*/
+    nav.stroke ul li a:after{
+        background: none!important;
+    }
+    .navbar a{
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 0px;
+        text-align: center;
+    }
+    .navbar img{
+        width: 30%;
+        height: 10%;
+    }
+    
+
+
+    body{
+        margin-top: -35px;
+    }
+
+
+    /*NavBar*/
+    
+
+
+
+    /*Carousel*/
+    #carouselSite{
+        margin-top: 90px;
+    }
+
+    #carouselSite .carousel-caption{
+        top: 5%;
+    }
+    #carouselSite .carousel-caption h1{
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    #carouselSite .carousel-caption p{
+        display: none;
+    }
+    .carousel-caption .main-btn{
+        font-size: 14px;
+    }
+
+
+    /*Sobre*/
+
+    .main-title{
+        font-size: 30px;
+    }
+    #about-area img{
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    /*Portfólio*/
+    #portfolio-area .filter-btn{
+        margin-bottom: 20px;
+        margin-right: 30px;
+        margin-left: 20px;
+        display: grid;
+    }
+    .project-box{
+        width: 50%;
+    }
+
+    /*Contato*/
+
+    #contact .paragrafo{
+        font-size: 20px;
+    }
+
+    /*Modal*/
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 60%;
+        max-width: 700px;
+    }
+    .col-12 .bemvindo{
+        font-size: 65px;
+    }
+
+}
+    
+
+
 /*# sourceMappingURL=style.css.map */
 
 
 /*# sourceMappingURL=style.css.map */
+ 

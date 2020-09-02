@@ -254,7 +254,7 @@ visibility: hidden;
 
 #contact .card:hover i,#contact .card:hover h4{
     color: #87d37c;
-    transition: 0,9s;
+    transition: .5s;
 }
 .project-box {
     margin-bottom: 30px;

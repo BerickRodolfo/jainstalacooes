@@ -297,6 +297,10 @@ visibility: hidden;
 }
 body{
     margin-top: -32px;
+    overflow-x: hidden;
+}
+.slide{
+    width: 100%;
 }
 nav ul li a,
 nav ul li a:after,

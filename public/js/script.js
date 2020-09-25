@@ -51,33 +51,28 @@ span.onclick = function() {
 }
 
 
+var modal1 = document.getElementById('Modal');
+var img1 = $('.myImg1');
+var modalImg1 = $("#img");
+var captionText1 = document.getElementById("captions");
+$('.myImg1').click(function(){
+    modal.style.display = "block";
+    var newSrc = this.src;
+    modalImg.attr('src', newSrc);
+    captionText.innerHTML = this.alt;
+});
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+
 
 
 
 
 
 //Close Navbar
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 $(document).ready(function(){
@@ -104,3 +99,49 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+const renderModal = (id) => {
+  let titulo = "";
+  let subtitulo = "";
+  let imagem = "";
+
+  switch (id) {
+    case 1:
+
+    titulo = "Pamonha";  
+
+    subtitulo = "É bom demais";
+
+    imagem = "C:\Users\Erick\Desktop\projetoreact\jainstalacoes\public\imgs/11.jpeg"
+
+
+    break;
+
+    case 2:
+
+      titulo = "Suco de Limão com Beterraba";  
+
+      subtitulo = "É Saudável demais";
+  
+      imagem = "C:\Users\Erick\Desktop\projetoreact\jainstalacoes\public\imgs/12.jpeg"
+    
+
+    break;
+
+    case 3:
+
+      titulo = "Suco de Abacaxi";  
+
+      subtitulo = "É Azedo demais";
+  
+      imagem = "C:\Users\Erick\Desktop\projetoreact\jainstalacoes\public\imgs/13.jpeg"
+    
+
+    break;
+  }
+
+
+  
+  
+}
+

@@ -7,6 +7,14 @@
 
 .myImg:hover {opacity: 0.7;}
 
+.myImg1 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.myImg1:hover {opacity: 0.7;}
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -23,6 +31,18 @@
     
 }
 
+#portfolio-area .img {
+      height: 75vw;
+      object-fit: cover; 
+    }
+  
+
+  .carousel-item .img {
+      height: 60vw;
+      object-fit: cover;
+      
+
+    }
 /* Modal Content (Image) */
 .modal-content {
     margin: auto;

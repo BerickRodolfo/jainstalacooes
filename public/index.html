@@ -30,6 +30,18 @@
         <div id="caption"></div>
       </div>
 
+
+
+
+      <div id="Modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img">
+        <div id="captions"></div>
+      </div>
+
+
+      
+
     
     
     <nav  class="navbar fixed-top stroke navbar-default  navbar-expand-lg navbar-dark  navbar-expand-md  menu bg-info">
@@ -90,12 +102,12 @@
 
             <div class="carousel-item active img-fluid ">
 
-                <img src="imgs/001.png"  class="d-block w-100" alt="Primeiro">
+                <img src="imgs/car01.png"  class="d-block w-100" alt="Primeiro">
 
                 <div class="carousel-caption  d-md-block text-dark">
 
                     <h1>Procurando Pisos de Qualidade?</h1>
-                    <p class="lead" style="color: black;">Clique no botão abaixo e confira</p>
+                    <p class="lead">Clique no botão abaixo e confira</p>
                     <a href="#venda" class="main-btn">Ver pisos</a>
                 </div>
 
@@ -191,38 +203,29 @@
 
     <div id="portfolio-area">
         <div class="container">
-          <div class="row">
+          <div class="row" id="gallery" data-toggle="modal"  e data-target="#exampleModal">
             <div class="col-md-12 mb-3 my-4" >
               <h3 class="main-title">Conheça nossos projetos</h3>
               <p class="text-center w-75 m-auto "style="font-size: larger ;">Para mais informações de cada projeto clique na imagem ou vídeo</p>
             </div>
-            <div class="col-md-12" id="filter-btn-box">
-              <button class="main-btn filter-btn active" id="all-btn">Todos</button>
-              <button class="main-btn filter-btn" id="dev-btn">Pisos</button>
-              <button class="main-btn filter-btn" id="dsg-btn">Rodapé</button>
-              <button class="main-btn filter-btn" id="seo-btn">Pisos e Rodapés</button>
+            <div class="col-md-4 project-box dev " >
+              <img src="imgs/11.jpeg" class="img-fluid myImg1" alt="Projeto 1" data-target="#carouselExample" data-slide-to="0">
             </div>
-            <div class="col-md-4 project-box dev">
-              <img src="imgs/11.jpeg" class="img-fluid" alt="Projeto 1">
+            <div class="col-md-4 project-box dsg " >
+              <img src="imgs/12.jpeg" class="img-fluid myImg1" alt="Projeto 2" data-target="#carouselExample" data-slide-to="0">
             </div>
-            <div class="col-md-4 project-box dsg">
-              <img src="imgs/12.jpeg" class="img-fluid" alt="Projeto 2">
-            </div>
-            <div class="col-md-4 project-box seo">
-              <img src="imgs/13.jpeg" class="img-fluid" alt="Projeto 3">
-            </div>
-            <div class="col-md-4 project-box dev">
-              <img src="imgs/14.jpeg" class="img-fluid" alt="Projeto 4">
-            </div>
-            <div class="col-md-4 project-box dsg">
-              <img src="imgs/15.jpeg" class="img-fluid" alt="Projeto 5">
-            </div>
-            <div class="col-md-4 project-box seo">
-              <img src="imgs/16.jpeg" class="img-fluid" alt="Projeto 6">
+            <div class="col-md-4 project-box seo " >
+              <img src="imgs/13.jpeg" class="img-fluid myImg1" alt="Projeto 3" data-target="#carouselExample" data-slide-to="0">
             </div>
           </div>
         </div>
       </div>
+
+      
+
+
+
+
       <br>
       <br>
       <br>

@@ -48,10 +48,15 @@ $('.myImg').click(function(){
 var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
 }
 
 
-var modal1 = document.getElementById('Modal');
+/* var modal1 = document.getElementById('Modal');
 var img1 = $('.myImg1');
 var modalImg1 = $("#img");
 var captionText1 = document.getElementById("captions");
@@ -65,7 +70,7 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
 }
-
+ */
 
 
 
@@ -100,48 +105,16 @@ $(document).ready(function(){
   });
 });
 
-const renderModal = (id) => {
-  let titulo = "";
-  let subtitulo = "";
-  let imagem = "";
+// When the modal is shown, we want a fixed body
+document.body.style.position = 'fixed';
+document.body.style.top = `-${window.scrollY}px`;
 
-  switch (id) {
-    case 1:
+// When the modal is hidden, we want to remain at the top of the scroll position
+document.body.style.position = '';
+document.body.style.top = '';
 
-    titulo = "Pamonha";  
-
-    subtitulo = "É bom demais";
-
-    imagem = "C:\Users\Erick\Desktop\projetoreact\jainstalacoes\public\imgs/11.jpeg"
-
-
-    break;
-
-    case 2:
-
-      titulo = "Suco de Limão com Beterraba";  
-
-      subtitulo = "É Saudável demais";
-  
-      imagem = "C:\Users\Erick\Desktop\projetoreact\jainstalacoes\public\imgs/12.jpeg"
-    
-
-    break;
-
-    case 3:
-
-      titulo = "Suco de Abacaxi";  
-
-      subtitulo = "É Azedo demais";
-  
-      imagem = "C:\Users\Erick\Desktop\projetoreact\jainstalacoes\public\imgs/13.jpeg"
-    
-
-    break;
-  }
-
-
-  
-  
-}
+const scrollY = document.body.style.top;
+document.body.style.position = '';
+document.body.style.top = '';
+window.scrollTo(0, parseInt(scrollY || '0') * -1);
 

@@ -11,6 +11,10 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 
     <script src="https://kit.fontawesome.com/c12477656d.js" crossorigin="anonymous"></script>
     <title>JAInstalações!</title>
@@ -32,13 +36,96 @@
 
 
 
-
+<!-- 
       <div id="Modal" class="modal">
         <span class="close">&times;</span>
         <img class="modal-content" id="img">
         <div id="captions"></div>
       </div>
+      
+ -->
 
+
+            <!-- Beginning Modal 1 -->
+        <div class="modal fade" id="myModal1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading 1</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <p>The first modal..</p>
+                        <img src="imgs/11.jpeg">
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    <!-- End Modal 1 -->
+
+    <!-- Beginning Modal 2 -->
+        <div class="modal fade" id="myModal2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading 2</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <p>A second modal..</p>
+                        <img src="imgs/12.jpeg">
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    <!-- End Modal 2 -->
+
+     <!-- Beginning Modal 3 -->
+        <div class="modal fade" id="myModal3">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading 3</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <p>The third modal..</p>
+                        <img src="imgs/13.jpeg">
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    <!-- End Modal 3 -->
 
       
 
@@ -102,7 +189,7 @@
 
             <div class="carousel-item active img-fluid ">
 
-                <img src="imgs/car01.png"  class="d-block w-100" alt="Primeiro">
+                <img src="imgs/01.png"  class="d-block w-100" alt="Primeiro">
 
                 <div class="carousel-caption  d-md-block text-dark">
 
@@ -203,23 +290,27 @@
 
     <div id="portfolio-area">
         <div class="container">
-          <div class="row" id="gallery" data-toggle="modal"  e data-target="#exampleModal">
+          <div class="row" >
             <div class="col-md-12 mb-3 my-4" >
               <h3 class="main-title">Conheça nossos projetos</h3>
               <p class="text-center w-75 m-auto "style="font-size: larger ;">Para mais informações de cada projeto clique na imagem ou vídeo</p>
             </div>
             <div class="col-md-4 project-box dev " >
-              <img src="imgs/11.jpeg" class="img-fluid myImg1" alt="Projeto 1" data-target="#carouselExample" data-slide-to="0">
+              <img src="imgs/11.jpeg" class="img-fluid myImg1"  id="myImg1" alt="Projeto 1" data-toggle="modal" data-target="#myModal1">
             </div>
             <div class="col-md-4 project-box dsg " >
-              <img src="imgs/12.jpeg" class="img-fluid myImg1" alt="Projeto 2" data-target="#carouselExample" data-slide-to="0">
+              <img src="imgs/12.jpeg" class="img-fluid myImg1" id="myImg2" alt="Projeto 2"  data-toggle="modal" data-target="#myModal2">
             </div>
             <div class="col-md-4 project-box seo " >
-              <img src="imgs/13.jpeg" class="img-fluid myImg1" alt="Projeto 3" data-target="#carouselExample" data-slide-to="0">
+              <img src="imgs/13.jpeg" class="img-fluid myImg1" id="myImg3" alt="Projeto 3" data-toggle="modal" data-target="#myModal3" >
             </div>
           </div>
         </div>
       </div>
+
+
+
+      
 
       
 
@@ -539,7 +630,7 @@
                     <div class="col-sm-12 col-md-6 col-lg-3 my-5">
                         <div class="card border-0">
                             <div class="card-body text-center">
-                                <i class="fa fa-facebook-official fa-5x mb-3" aria-hidden="true"></i>
+                                <i class="fa fa-facebook-official fa-5x mb-3 fb" aria-hidden="true"></i>
                                 <h4 class="text-uppercase mb-5">Facebook</h4>
                                 <p class="paragrafo">Suite 02, Level 12, Sahera Tropical Center </p>
                             </div>
@@ -548,8 +639,8 @@
                     <div class="col-sm-12 col-md-6 col-lg-3 my-5">
                         <div class="card border-0">
                             <div class="card-body text-center">
-                                <i class="fa fa-map-marker fa-5x mb-3" aria-hidden="true"></i>
-                                <h4 class="text-uppercase mb-5">Escritório</h4>
+                                <i class="fab fa-whatsapp fa-5x mb-3" aria-hidden="true"></i>
+                                <h4 class="text-uppercase mb-5">Whatsapp</h4>
                                 <p class="paragrafo">Suite 02, Level 12, Sahera Tropical Center </p>
                             </div>
                         </div>
